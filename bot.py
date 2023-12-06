@@ -1,6 +1,5 @@
 # bot.py
 import os
-
 import discord
 from dotenv import load_dotenv
 import psutil
@@ -22,7 +21,11 @@ serverStatusList = {
     "online": "🟢",
     "offline": "🔴"
 }
-
+avaliableCommands = [
+    "!help Comando para ver todos los comandos disponibles y sus funciones",
+    "!status: Comando para consultar el estado del servidor de minecraft",
+    "!start: Comando para iniciar el servidor (solo se ejecuta el servidor si no está en marcha)"
+]
 
 def get_server_status():
     # Replace 'your_server_command' with the actual command to start your Minecraft server
@@ -45,8 +48,14 @@ async def on_message(message):
     if message.content.startswith('!'):
         logging.info(f'{message.author} sent command: {message.content}')
 
+    if message.content == '!help':
+        msg_to_return = "Comandos disponibles actualmente:\n`"
+        for command in avaliableCommands:
+            msg_to_return += command + "\n"
+        msg_to_return +="`"
+        await message.channel.send(msg_to_return)
     if message.content == '!status':
-        message_to_return = "Server is " + get_server_status() + " " + serverStatusList[get_server_status()]
+        message_to_return = "Server Status: " + get_server_status() + "\t" + serverStatusList[get_server_status()]
         await message.channel.send(message_to_return)
 
     if message.content == '!start':
