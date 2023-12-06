@@ -1,0 +1,36 @@
+2023-12-06 22:30:22,990 - logging in using static token
+2023-12-06 22:30:23,476 - Shard ID None has sent the IDENTIFY payload.
+2023-12-06 22:30:23,699 - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-d-fssd",{"micros":104303,"calls":["id_created",{"micros":1488,"calls":[]},"session_lookup_time",{"micros":3148,"calls":[]},"session_lookup_finished",{"micros":16,"calls":[]},"discord-sessions-prd-2-69",{"micros":98249,"calls":["start_session",{"micros":35703,"calls":["discord-api-6fc4454cbb-8llsl",{"micros":31817,"calls":["get_user",{"micros":6167},"get_guilds",{"micros":2523},"send_scheduled_deletion_message",{"micros":10},"guild_join_requests",{"micros":616},"authorized_ip_coro",{"micros":8}]}]},"starting_guild_connect",{"micros":72,"calls":[]},"presence_started",{"micros":423,"calls":[]},"guilds_started",{"micros":166,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":61857,"calls":[]},"connect_finished",{"micros":61862,"calls":[]},"build_ready",{"micros":19,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: d5b77f4b75481df8f41db930828868da).
+2023-12-06 22:31:01,596 - Received signal to terminate bot and event loop.
+2023-12-06 22:31:01,596 - Cleaning up tasks.
+2023-12-06 22:31:01,596 - Cleaning up after 1 tasks.
+2023-12-06 22:31:01,597 - All tasks finished cancelling.
+2023-12-06 22:31:01,597 - Closing the event loop.
+2023-12-06 22:31:05,430 - logging in using static token
+2023-12-06 22:31:05,890 - Shard ID None has sent the IDENTIFY payload.
+2023-12-06 22:31:06,192 - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-d-2cp9",{"micros":160583,"calls":["id_created",{"micros":1626,"calls":[]},"session_lookup_time",{"micros":1001,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-2-258",{"micros":157035,"calls":["start_session",{"micros":109904,"calls":["discord-api-6fc4454cbb-fkfjz",{"micros":102270,"calls":["get_user",{"micros":12728},"get_guilds",{"micros":7517},"send_scheduled_deletion_message",{"micros":10},"guild_join_requests",{"micros":4663},"authorized_ip_coro",{"micros":8}]}]},"starting_guild_connect",{"micros":55,"calls":[]},"presence_started",{"micros":331,"calls":[]},"guilds_started",{"micros":249,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":46463,"calls":[]},"connect_finished",{"micros":46470,"calls":[]},"build_ready",{"micros":22,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: 93b73a7327b7e3e352acaba28cb8acd3).
+2023-12-06 22:31:24,703 - axen8#0 sent command: !status
+2023-12-06 22:36:08,950 - Websocket closed with 1000, cannot reconnect.
+2023-12-06 22:36:09,139 - Attempting a reconnect in 1.57s
+Traceback (most recent call last):
+  File "D:\anaconda3\lib\site-packages\discord\client.py", line 566, in connect
+    await self.ws.poll_event()
+  File "D:\anaconda3\lib\site-packages\discord\gateway.py", line 582, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+2023-12-06 22:40:15,589 - Attempting a reconnect in 0.78s
+Traceback (most recent call last):
+  File "D:\anaconda3\lib\site-packages\discord\client.py", line 563, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+  File "D:\anaconda3\lib\asyncio\tasks.py", line 449, in wait_for
+    raise futures.TimeoutError()
+concurrent.futures._base.TimeoutError
+2023-12-06 22:40:35,219 - Shard ID None has sent the RESUME payload.
+2023-12-06 22:40:35,339 - Shard ID None session has been invalidated.
+2023-12-06 22:40:35,458 - Got a request to IDENTIFY the websocket.
+2023-12-07 00:30:12,393 - logging in using static token
+2023-12-07 00:30:12,930 - Shard ID None has sent the IDENTIFY payload.
+2023-12-07 00:30:13,193 - Shard ID None has connected to Gateway: ["gateway-prd-us-east1-c-n5cg",{"micros":148285,"calls":["id_created",{"micros":2585,"calls":[]},"session_lookup_time",{"micros":1511,"calls":[]},"session_lookup_finished",{"micros":17,"calls":[]},"discord-sessions-prd-2-47",{"micros":143701,"calls":["start_session",{"micros":66437,"calls":["discord-api-95547c977-ngg96",{"micros":61066,"calls":["get_user",{"micros":11214},"get_guilds",{"micros":6250},"send_scheduled_deletion_message",{"micros":8},"guild_join_requests",{"micros":2},"authorized_ip_coro",{"micros":8}]}]},"starting_guild_connect",{"micros":67,"calls":[]},"presence_started",{"micros":401,"calls":[]},"guilds_started",{"micros":202,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":76563,"calls":[]},"connect_finished",{"micros":76570,"calls":[]},"build_ready",{"micros":21,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}] (Session ID: b7626ccba8ae0f8477e1c1091606f978).
+2023-12-07 00:30:20,374 - anlegi#0 sent command: !status
+2023-12-07 00:30:28,216 - anlegi#0 sent command: !start
+2023-12-07 00:30:38,212 - anlegi#0 sent command: !status
