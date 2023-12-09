@@ -14,9 +14,8 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
 serverDirectory = os.getenv('SERVER_DIRECTORY')
-serverCommand = os.getenv('SERVER_DIRECTORY') + 'run.bat'
+serverCommand = serverDirectory + os.getenv('SERVER_RUN')
 bot = commands.Bot(command_prefix='!')
-
 
 serverStatusList = {
     "online": "🟢",

@@ -1,3 +1,2 @@
 psutil
 discord.py
-logging
