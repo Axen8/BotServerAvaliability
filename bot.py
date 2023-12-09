@@ -8,6 +8,7 @@ import logging
 logging.basicConfig(filename='bot_commands.log', level=logging.INFO, format='%(asctime)s - %(message)s')
 from discord.ext import commands
 
+
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 intents = discord.Intents.all()
