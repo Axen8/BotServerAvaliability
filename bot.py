@@ -28,7 +28,7 @@ avaliableCommands = [
 
 def get_server_status():
     # Replace 'your_server_command' with the actual command to start your Minecraft server
-    server_command = "ServerForge\\run.bat"
+    server_command = "minecraftforge/forge"
 
     for process in psutil.process_iter(['cmdline']):
         try:
