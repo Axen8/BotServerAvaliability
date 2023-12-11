@@ -6,7 +6,9 @@ how to setup:
 DISCORD_TOKEN="Paste your discord bot token here"
 SERVER_DIRECTORY="Paste the directory path to the location where the server is stored here."
 SERVER_RUN="Provide the run file with the appropriate extension. If you're using a Windows OS, paste the .bat file; if you're on Linux, paste the .sh file here."
+CLOSING_PASSWD="put a password to give access to high level functions"
 ```
+
 - Execute the following command to install the dependencies (it is advisable to do this within a virtual environment):
 
 `pip install -r requirements.txt`
