@@ -1,3 +1,4 @@
 psutil
 discord.py
 bcrypt
+python-dotenv

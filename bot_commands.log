@@ -111,3 +111,29 @@ concurrent.futures._base.TimeoutError
 2023-12-11 02:28:57,037 - Cleaning up after 1 tasks.
 2023-12-11 02:28:57,037 - All tasks finished cancelling.
 2023-12-11 02:28:57,038 - Closing the event loop.
+2025-01-23 04:03:07,953 - PyNaCl is not installed, voice will NOT be supported
+2025-01-23 04:03:07,954 - logging in using static token
+2025-01-23 04:03:08,971 - Shard ID None has connected to Gateway (Session ID: e2e3a2de6e141a9ed8b68b4e7e720641).
+2025-01-23 04:04:08,579 - axen8 sent command: !status
+2025-01-23 04:04:14,314 - axen8 sent command: !start
+2025-01-23 04:04:14,334 - Ignoring exception in on_message
+Traceback (most recent call last):
+  File "/home/axen8/Documentos/BotServerAvaliability/.venv/lib/python3.12/site-packages/discord/client.py", line 449, in _run_event
+    await coro(*args, **kwargs)
+  File "/home/axen8/Documentos/BotServerAvaliability/bot.py", line 93, in on_message
+    subprocess.Popen([serverCommand],cwd=serverDirectory)
+  File "/usr/lib/python3.12/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.12/subprocess.py", line 1955, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/axen8/Documentos/servers_mc/server2025_1start.sh'
+2025-01-23 04:04:48,883 - PyNaCl is not installed, voice will NOT be supported
+2025-01-23 04:04:48,883 - logging in using static token
+2025-01-23 04:04:49,590 - Shard ID None has connected to Gateway (Session ID: b021b7c620996fc59829592a108cfb6c).
+2025-01-23 04:04:53,943 - axen8 sent command: !status
+2025-01-23 04:04:56,810 - axen8 sent command: !start
+2025-01-23 04:05:16,163 - axen8 sent command: !stop
+2025-01-23 04:05:39,101 - axen8 sent command: !stop
+2025-01-23 04:05:47,703 - axen8 sent command: !close
+2025-01-23 04:05:51,390 - axen8 sent command: !close TEST
+2025-01-23 04:05:57,124 - axen8 sent command: !close NO
