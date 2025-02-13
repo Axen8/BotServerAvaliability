@@ -5,3 +5,5 @@ autostart.sh
 bot_commands.log
 *.log
 *.log
+bot_commands.log
+autosync.sh

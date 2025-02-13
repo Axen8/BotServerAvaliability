@@ -74,7 +74,7 @@ def stop_minecraft_server_unix():
 async def on_message(message):
     if message.author == client.user:
         return
-    
+
     if message.content.startswith('!'):
         logging.info(f'{message.author} sent command: {message.content}')
 
@@ -105,4 +105,8 @@ async def on_message(message):
             await message.channel.send("El servidor se esta cerrando")
         else:
             await message.channel.send("Contraseña incorrecta para esta acción")
+
+    if message.content == '!Cambia':
+        if message.author == "axen8":
+            exit()
 client.run(TOKEN)
